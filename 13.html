@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body onload="getinfo()" onresize="getinfo()">
+<div id="display">
+	
+</div>
+<script>
+	function getinfo()
+	 {
+		var a = document.documentElement.clientWidth;
+		var b = document.documentElement.clientHeight;
+		document.getElementById("display").innerHTML ="<h1> width : "+a + "Height:" +b+ "</h1>";
+
+	}
+	</script>
+</body>
+</html>

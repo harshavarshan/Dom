@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body>
+<p>[<a href="#" onmouseover="high()" onmouseout="leave()"> Will change </a>]</p>
+<p><strong>Hello</strong>Good moring<strong>How</strong>are you <strong>welcome</strong> to online <strong>Photography</strong> tips<strong>Hello</strong>Good moring<strong>How</strong>are you <strong>welcome</strong> to online <strong>Photography</strong> tips<strong>Hello</strong>Good moring<strong>How</strong>are you <strong>welcome</strong> to online <strong>Photography</strong> tips<strong>Hello</strong>Good moring<strong>How</strong>are you <strong>welcome</strong> to online <strong>Photography</strong> tips<strong>Hello</strong>Good moring<strong>How</strong>are you <strong>welcome</strong> to online <strong>Photography</strong> tips<strong>Hello</strong>Good moring<strong>How</strong>are you <strong>welcome</strong> to online <strong>Photography</strong> tips</p>
+<script>
+	var bold;
+	window.onload =getbold();
+	function getbold()
+	 {
+	bold = document.getElementsByTagName("strong");
+	}
+	function high()
+	 {
+		for(var i =0;i<bold.length;i++)
+		{
+			bold[i].style.color="red";
+		}
+	}
+	function leave() {
+		for(var i=0;i<bold.length;i++)
+		{
+			bold[i].style.color="black";
+		}
+	}
+</script>
+</body>
+</html>

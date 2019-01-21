@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body>
+<div>
+	<button id="jsstyle" onclick="display()">Show Images</button>
+</div>
+<script>
+	function display()
+	 {
+		var images = [{
+			src:"1.jpg";
+			width:"240";
+			height:"160";
+		},{
+			src:"2.jpg";
+			width:"240";
+			height:"160";
+		},
+		{
+			src:"3.jpg";
+			width:"240";
+			height:"160";
+		}];
+		var buffer =[];
+		for(var i = 0; j = images; i<j;i++)
+		{
+			buffer[i] = new Image();
+			buffer[i].src = images[i].src;
+			buffer[i].width = images[i].width;
+			buffer[i].height = images[i].height;
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom</title>
+</head>
+<body>
+	<form id="form1" onsubmit="getfrom()">
+		<input type="text" name="fname"><br>
+		<input type="text" name="lname"><br>
+		<button  type="submit"value="Submit">Submit</button>
+	</form>
+     <script>
+     	function getfrom() 
+     	{
+     		var ref = document.getElementById('form1');
+     		for(var i = 0; i<ref.length;i++)
+     		{
+     			if(ref.elements[i].value!='Submit')
+     			{
+     				alert(ref.elements[i].value);
+     			}
+     		}
+     	 
+     	}
+     </script>
+</body>
+</html>
